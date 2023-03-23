@@ -1,0 +1,23 @@
+BEGIN{
+print "-----------------------------------------------------"
+print "Let's try to perform arithmetic with columns 3 and 4"
+print "-----------------------------------------------------"
+}
+{
+no1 = $2
+no2 = $3
+val1 = no1 + no2
+val2 = no1 - no2
+val3 = no1 * no2
+val4 = no1 / no2
+val5 = no1 % no2
+print "Addition = " val1
+print "Subtraction = " val2
+print "Multiplication = " val3
+print "Division = " val4
+print "Modulus = " val5
+print "------------------------" 
+}
+END{
+print "-----------------Calculations End for the Table-----------------"
+}
